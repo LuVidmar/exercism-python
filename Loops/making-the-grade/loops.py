@@ -8,7 +8,7 @@ def round_scores(student_scores: list) -> list:
     :return: list - student scores *rounded* to nearest integer value.
     """
 
-    return list(map(lambda score: round(score), student_scores))
+    return [round(score) for score in student_scores]
 
 
 def count_failed_students(student_scores: list) -> int:
